@@ -78,7 +78,15 @@ describe("getPrevious", () => {
         });
     });
 
-    describe("using a 'normal' Writable store", () => {
-        const writableStore = 
-    })
+    describe("using a 'normal' store", () => {
+        const writableStore = writable(Symbol("storeValue"));
+
+        it("`getPrevious` should return undefined", () => {
+            // TypeScript tells us not to do this, but we want to test it
+            // anyway, for those who ignore or don't see type errors.
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            expect(getPrevious(writableStore)).toBe(undefined);
+        });
+    });
 });
