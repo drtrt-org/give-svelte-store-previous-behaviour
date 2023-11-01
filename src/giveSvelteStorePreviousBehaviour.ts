@@ -12,21 +12,21 @@ export function giveSvelteStorePreviousBehaviour<T>(
 ): ReadableWithPrevious<T> | WritableWithPrevious<T> {
     const { subscribe: originalSubscribe, ...rest } = store;
 
-    const previousValueHolder: { current: undefined | T; previous: undefined | T } = {
+    const storeValues: { current: undefined | T; previous: undefined | T } = {
         current: undefined,
         previous: undefined,
     };
 
     originalSubscribe((x) => {
-        previousValueHolder.previous = previousValueHolder.current;
-        previousValueHolder.current = x;
+        storeValues.previous = storeValues.current;
+        storeValues.current = x;
     });
 
     const forReturn = {
         ...rest,
         subscribe(run: SubscriberWithPrevious<T>) {
             return originalSubscribe((value: T) => {
-                run(value, previousValueHolder.previous);
+                run(value, storeValues.previous);
             });
         },
     };
