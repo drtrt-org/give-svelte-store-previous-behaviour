@@ -1,10 +1,10 @@
-import { Writable, derived, get, writable } from "svelte/store";
+import { type Writable, derived, get, writable } from "svelte/store";
 import { expect, describe, it, beforeEach } from "vitest";
 
 import { getPrevious } from "./getPrevious";
 import { giveSvelteStorePreviousBehaviour } from "./giveSvelteStorePreviousBehaviour";
-import { ReadableWithPrevious } from "./ReadableWithPrevious";
-import { WritableWithPrevious } from "./WritableWithPrevious";
+import { type ReadableWithPrevious } from "./ReadableWithPrevious";
+import { type WritableWithPrevious } from "./WritableWithPrevious";
 
 describe("getPrevious", () => {
     const firstValue = Symbol("firstValue");
@@ -19,7 +19,7 @@ describe("getPrevious", () => {
 
         describe("initialised with a value", () => {
             it("`getPrevious` should return undefined", () => {
-                expect(getPrevious(writableWithPrevious)).toBe(undefined);
+                expect(getPrevious(writableWithPrevious)).toBeUndefined();
             });
 
             it("`get` should return the value with which the store was initialised", () => {
@@ -55,7 +55,7 @@ describe("getPrevious", () => {
 
         describe("initialised with a value", () => {
             it("`getPrevious` should return undefined", () => {
-                expect(getPrevious(readableWithPrevious)).toBe(undefined);
+                expect(getPrevious(readableWithPrevious)).toBeUndefined();
             });
 
             it("`get` should return the value with which the store was initialised", () => {
@@ -86,7 +86,7 @@ describe("getPrevious", () => {
             // anyway, for those who ignore or don't see type errors.
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
-            expect(getPrevious(writableStore)).toBe(undefined);
+            expect(getPrevious(writableStore)).toBeUndefined();
         });
     });
 });
