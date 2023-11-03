@@ -1,5 +1,5 @@
 export { giveSvelteStorePreviousBehaviour } from "./giveSvelteStorePreviousBehaviour";
 export { getPrevious } from "./getPrevious";
-export { ReadableWithPrevious } from "./ReadableWithPrevious";
-export { WritableWithPrevious } from "./WritableWithPrevious";
-export { SubscriberWithPrevious } from "./SubscriberWithPrevious";
+export { type ReadableWithPrevious } from "./ReadableWithPrevious";
+export { type WritableWithPrevious } from "./WritableWithPrevious";
+export { type SubscriberWithPrevious } from "./SubscriberWithPrevious";
