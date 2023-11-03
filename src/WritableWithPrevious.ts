@@ -1,7 +1,7 @@
-import type { Invalidator, Unsubscriber, Writable } from "svelte/store";
+import type { Invalidator, Readable, Unsubscriber, Writable } from "svelte/store";
 
-import { ReadableWithPrevious } from "./ReadableWithPrevious";
-import { SubscriberWithPrevious } from "./SubscriberWithPrevious";
+import { type ReadableWithPrevious } from "./ReadableWithPrevious";
+import { type SubscriberWithPrevious } from "./SubscriberWithPrevious";
 
 export interface WritableWithPrevious<T> extends Writable<T>, ReadableWithPrevious<T> {
     subscribe: (
@@ -9,4 +9,5 @@ export interface WritableWithPrevious<T> extends Writable<T>, ReadableWithPrevio
         run: SubscriberWithPrevious<T>,
         invalidate?: Invalidator<T> | undefined,
     ) => Unsubscriber;
+    previousValueStore: Readable<T | undefined>;
 }

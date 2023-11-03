@@ -1,8 +1,8 @@
-import type { Readable, Writable } from "svelte/store";
+import { derived, type Readable, type Writable } from "svelte/store";
 
-import { ReadableWithPrevious } from "./ReadableWithPrevious";
-import { SubscriberWithPrevious } from "./SubscriberWithPrevious";
-import { WritableWithPrevious } from "./WritableWithPrevious";
+import { type ReadableWithPrevious } from "./ReadableWithPrevious";
+import { type SubscriberWithPrevious } from "./SubscriberWithPrevious";
+import { type WritableWithPrevious } from "./WritableWithPrevious";
 
 export function giveSvelteStorePreviousBehaviour<T>(store: Writable<T>): WritableWithPrevious<T>;
 export function giveSvelteStorePreviousBehaviour<T>(store: Readable<T>): ReadableWithPrevious<T>;
@@ -10,26 +10,35 @@ export function giveSvelteStorePreviousBehaviour<T>(store: Readable<T>): Readabl
 export function giveSvelteStorePreviousBehaviour<T>(
     store: Readable<T> | Writable<T>,
 ): ReadableWithPrevious<T> | WritableWithPrevious<T> {
-    const { subscribe: originalSubscribe, ...rest } = store;
+    const { subscribe, ...rest } = store;
 
     const storeValues: { current: undefined | T; previous: undefined | T } = {
         current: undefined,
         previous: undefined,
     };
 
-    originalSubscribe((x) => {
+    subscribe((x) => {
         storeValues.previous = storeValues.current;
         storeValues.current = x;
     });
 
-    const forReturn = {
+    let _previousValueStore: Readable<T | undefined>;
+
+    return {
         ...rest,
+
         subscribe(run: SubscriberWithPrevious<T>) {
-            return originalSubscribe((value: T) => {
+            return subscribe((value: T) => {
                 run(value, storeValues.previous);
             });
         },
-    };
 
-    return forReturn;
+        get previousValueStore() {
+            if (!_previousValueStore) {
+                _previousValueStore = derived(store, () => storeValues.previous);
+            }
+
+            return _previousValueStore;
+        },
+    };
 }
