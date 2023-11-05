@@ -1,6 +1,7 @@
 /node_modules
 /coverage
 /dist
+/docs
 
 # Prevent local npm `pack` experiments getting committed
 *.tgz

@@ -49,6 +49,7 @@
         "commitlint": "commitlint --edit",
         "semantic-release": "semantic-release --dry-run",
         "build": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap",
+        "docs": "typedoc",
         "watch": "npm run build -- --watch src"
     },
     "repository": {
@@ -78,6 +79,8 @@
         "semantic-release": "^22.0.5",
         "svelte": "^4.2.2",
         "tsup": "^7.2.0",
+        "typedoc": "^0.25.3",
+        "typedoc-plugin-markdown": "^3.17.0",
         "vitest": "^0.34.6"
     },
     "peerDependencies": {
