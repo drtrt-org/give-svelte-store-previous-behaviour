@@ -175,3 +175,7 @@ Full detail is available in the [dedicated Types documentation](https://github.c
 ### Why did you spell 'behaviour' wrong?
 
 #### **Answer:** I didn't. 😉
+
+## Release History
+
+The Change Log for this package is available in the GitHub Repo, [here](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/main/CHANGELOG.md).
