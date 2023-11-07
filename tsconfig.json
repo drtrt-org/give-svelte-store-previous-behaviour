@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "verbatimModuleSyntax": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
