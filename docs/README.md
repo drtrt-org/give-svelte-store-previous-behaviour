@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/SubscriberWithPrevious.ts:1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/a7c6e6d/src/SubscriberWithPrevious.ts#L1)
+[src/SubscriberWithPrevious.ts:1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/0f8f3df/src/SubscriberWithPrevious.ts#L1)
 
 ## Functions
 
@@ -73,7 +73,7 @@
 
 #### Defined in
 
-[src/getPrevious.ts:3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/a7c6e6d/src/getPrevious.ts#L3)
+[src/getPrevious.ts:3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/0f8f3df/src/getPrevious.ts#L3)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/giveSvelteStorePreviousBehaviour.ts:7](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/a7c6e6d/src/giveSvelteStorePreviousBehaviour.ts#L7)
+[src/giveSvelteStorePreviousBehaviour.ts:7](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/0f8f3df/src/giveSvelteStorePreviousBehaviour.ts#L7)
 
 ▸ **giveSvelteStorePreviousBehaviour**\<`T`\>(`store`): [`ReadableWithPrevious`](interfaces/ReadableWithPrevious.md)\<`T`\>
 
@@ -121,4 +121,4 @@ ___
 
 #### Defined in
 
-[src/giveSvelteStorePreviousBehaviour.ts:8](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/a7c6e6d/src/giveSvelteStorePreviousBehaviour.ts#L8)
+[src/giveSvelteStorePreviousBehaviour.ts:8](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/0f8f3df/src/giveSvelteStorePreviousBehaviour.ts#L8)

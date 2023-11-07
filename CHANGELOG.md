@@ -1,3 +1,11 @@
+## [1.0.0-beta.4](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-11-07)
+
+
+### Bug Fixes
+
+* generate type docs on commit ([9e67a56](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/9e67a567f6b0a67ca75f54288b241e02a20455e5))
+* prevent generated docs being prettier-checked ([87ce2cd](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/87ce2cd5b197d2ff6154d2c7d526654f88a42da4))
+
 ## [1.0.0-beta.3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-11-03)
 
 
