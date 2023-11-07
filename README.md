@@ -166,7 +166,7 @@ const { giveSvelteStorePreviousBehaviour } = require("@drtrt/give-svelte-store-p
 
 ## Types
 
-A number of types can be imported for use with TypeScript.
+A full set of types is available for TypeScript consumers.
 
 Full detail is available in the [dedicated Types documentation](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/main/docs/README.md).
 
