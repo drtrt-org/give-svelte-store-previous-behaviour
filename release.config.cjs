@@ -19,13 +19,19 @@ module.exports = {
                 changelogFile: "CHANGELOG.md",
             },
         ],
+        [
+            "@semantic-release/exec",
+            {
+                prepareCmd: "typedoc --out docs",
+            },
+        ],
         "@semantic-release/npm",
         [
             "@semantic-release/git",
             {
-                assets: ["package.json", "CHANGELOG.md"],
+                assets: ["package.json", "CHANGELOG.md", "docs/"],
                 message:
-                    "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+                    "chore(release): release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
             },
         ],
         [

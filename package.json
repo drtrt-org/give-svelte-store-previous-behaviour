@@ -49,6 +49,7 @@
         "commitlint": "commitlint --edit",
         "semantic-release": "semantic-release --dry-run",
         "build": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap",
+        "docs": "typedoc",
         "watch": "npm run build -- --watch src"
     },
     "repository": {
@@ -62,6 +63,7 @@
         "@commitlint/cli": "^17.8.0",
         "@commitlint/config-conventional": "^17.8.0",
         "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/exec": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "^9.2.1",
         "@typescript-eslint/eslint-plugin": "^6.9.0",
@@ -78,6 +80,8 @@
         "semantic-release": "^22.0.5",
         "svelte": "^4.2.2",
         "tsup": "^7.2.0",
+        "typedoc": "^0.25.3",
+        "typedoc-plugin-markdown": "^3.17.0",
         "vitest": "^0.34.6"
     },
     "peerDependencies": {
