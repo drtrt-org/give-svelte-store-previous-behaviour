@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/WritableWithPrevious.ts:12](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/0f8f3df/src/WritableWithPrevious.ts#L12)
+[src/WritableWithPrevious.ts:12](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/cfbedb8/src/WritableWithPrevious.ts#L12)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/WritableWithPrevious.ts:7](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/0f8f3df/src/WritableWithPrevious.ts#L7)
+[src/WritableWithPrevious.ts:7](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/cfbedb8/src/WritableWithPrevious.ts#L7)
 
 ## Methods
 
