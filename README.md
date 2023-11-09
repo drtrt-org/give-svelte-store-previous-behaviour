@@ -2,6 +2,7 @@
 
 A wrapper for any Svelte Store instance, giving access to the previously set value in a style that follows familiar Svelte Store semantics.
 
+[![CI status](https://img.shields.io/badge/ci-passing-green)](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/actions/workflows/CI.yml)
 [![NPM version](https://img.shields.io/npm/v/@drtrt/give-svelte-store-previous-behaviour)](https://www.npmjs.com/package/@drtrt/give-svelte-store-previous-behaviour)
 [![License](https://img.shields.io/npm/l/@drtrt/give-svelte-store-previous-behaviour)](./LICENSE)
 [![NPM bundle size analysis](https://img.shields.io/bundlephobia/minzip/@drtrt/give-svelte-store-previous-behaviour)](https://bundlephobia.com/package/@drtrt/give-svelte-store-previous-behaviour)
