@@ -1,6 +1,6 @@
 {
     "name": "@drtrt/give-svelte-store-previous-behaviour",
-    "version": "1.0.0",
+    "version": "1.0.1-beta.1",
     "description": "A wrapper for any Svelte Store instance, giving access to the previously set value in a style that follows existing Svelte Store semantics.",
     "keywords": [
         "svelte",
@@ -20,6 +20,7 @@
         "access": "public",
         "provenance": true
     },
+    "sideEffects": false,
     "engines": {
         "node": ">=18.0.0 <20"
     },
