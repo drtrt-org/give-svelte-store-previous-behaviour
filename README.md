@@ -2,6 +2,10 @@
 
 A wrapper for any Svelte Store instance, giving access to the previously set value in a style that follows familiar Svelte Store semantics.
 
+[![NPM version](https://img.shields.io/npm/v/@drtrt/give-svelte-store-previous-behaviour)](https://www.npmjs.com/package/@drtrt/give-svelte-store-previous-behaviour)
+[![License](https://img.shields.io/npm/l/@drtrt/give-svelte-store-previous-behaviour)](./LICENSE)
+[![NPM bundle size analysis](https://img.shields.io/bundlephobia/minzip/@drtrt/give-svelte-store-previous-behaviour)](https://bundlephobia.com/package/@drtrt/give-svelte-store-previous-behaviour)
+
 ## It's a wrap
 
 `give-svelte-store-previous-behaviour` does not instantiate a Store. Rather, **_it wraps an existing Store_**, leaving you with full control over how your Store is instantiated. This is important because:
