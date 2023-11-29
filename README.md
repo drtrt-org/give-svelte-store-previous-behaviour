@@ -56,7 +56,7 @@ Additional points to consider for `getPrevious`:
 -   Until the Store's value has changed at least once after initialisation, `getPrevious` will return `undefined`.
 -   As [per the guidance](https://svelte.dev/docs/svelte-store#get) for using `get`, one would usually read the Previous Value by subscribing to the Store rather than using `getPrevious`.
 
-### Using `subcribe`
+### Using `subscribe`
 
 The Store's `subscribe` function will, in addition to its existing `value` parameter, gain an extra `previousValue` param:
 
@@ -104,11 +104,11 @@ The Store will have an additional `previousValueStore` property that yields a `R
 <script>
     import { writable } from "svelte/store";
 
-	import {
+    import {
         giveSvelteStorePreviousBehaviour
     } from "@drtrt/give-svelte-store-previous-behaviour";
 
-	// Initialise a `writable` store and then wrap it:
+    // Initialise a `writable` store and then wrap it:
     const booleanStore =
         giveSvelteStorePreviousBehaviour(
             writable(true)
@@ -119,20 +119,20 @@ The Store will have an additional `previousValueStore` property that yields a `R
     }
 
     // Get `previousValueStore`
-	const { previousValueStore } = booleanStore;
+    const { previousValueStore } = booleanStore;
 </script>
 
 <div>
-	Current Boolean Value is: {$booleanStore}
+    Current Boolean Value is: {$booleanStore}
 </div>
 
 <div>
     Previous Boolean Value was: {$previousValueStore}
 </div>
 
-<button
-	on:click={flipBoolean}>Flip Boolean</button
->
+<button on:click={flipBoolean}>
+    Flip Boolean
+</button>
 ```
 
 Further considerations for using `previousValueStore`:
