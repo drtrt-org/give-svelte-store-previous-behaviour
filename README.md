@@ -56,7 +56,7 @@ Additional points to consider for `getPrevious`:
 -   Until the Store's value has changed at least once after initialisation, `getPrevious` will return `undefined`.
 -   As [per the guidance](https://svelte.dev/docs/svelte-store#get) for using `get`, one would usually read the Previous Value by subscribing to the Store rather than using `getPrevious`.
 
-### Using `subcribe`
+### Using `subscribe`
 
 The Store's `subscribe` function will, in addition to its existing `value` parameter, gain an extra `previousValue` param:
 
