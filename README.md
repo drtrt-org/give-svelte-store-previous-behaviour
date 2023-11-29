@@ -104,11 +104,11 @@ The Store will have an additional `previousValueStore` property that yields a `R
 <script>
     import { writable } from "svelte/store";
 
-	import {
+    import {
         giveSvelteStorePreviousBehaviour
     } from "@drtrt/give-svelte-store-previous-behaviour";
 
-	// Initialise a `writable` store and then wrap it:
+    // Initialise a `writable` store and then wrap it:
     const booleanStore =
         giveSvelteStorePreviousBehaviour(
             writable(true)
@@ -119,20 +119,20 @@ The Store will have an additional `previousValueStore` property that yields a `R
     }
 
     // Get `previousValueStore`
-	const { previousValueStore } = booleanStore;
+    const { previousValueStore } = booleanStore;
 </script>
 
 <div>
-	Current Boolean Value is: {$booleanStore}
+    Current Boolean Value is: {$booleanStore}
 </div>
 
 <div>
     Previous Boolean Value was: {$previousValueStore}
 </div>
 
-<button
-	on:click={flipBoolean}>Flip Boolean</button
->
+<button on:click={flipBoolean}>
+    Flip Boolean
+</button>
 ```
 
 Further considerations for using `previousValueStore`:
