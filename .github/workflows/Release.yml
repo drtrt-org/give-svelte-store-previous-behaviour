@@ -33,10 +33,3 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-            - name: Merge main into beta
-              run: |
-                  git fetch origin
-                  git checkout beta
-                  git merge --no-ff origin/main -m "chore: Merge branch 'main' into beta"
-                  git push origin beta
