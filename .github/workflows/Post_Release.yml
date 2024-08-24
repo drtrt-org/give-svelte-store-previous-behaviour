@@ -1,0 +1,25 @@
+on:
+    release:
+        types: [created]
+
+jobs:
+    sync-branches:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+                  persist-credentials: true
+
+            - name: Configure git user
+              run: |
+                  git config user.name 'github-actions'
+                  git config user.email 'github-actions@github.com'
+
+            - name: Merge main into beta
+              run: |
+                  git fetch origin
+                  git checkout beta
+                  git merge main
+                  git push origin beta
