@@ -1,0 +1,26 @@
+on:
+    release:
+        types: [created]
+
+jobs:
+    sync-branches:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+                  persist-credentials: false
+
+            - name: Configure git user
+              run: |
+                  git config user.name 'github-actions'
+                  git config user.email 'github-actions@github.com'
+                  git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.SEMANTIC_RELEASE_GITHUB }}"
+
+            - name: Merge main into beta
+              run: |
+                  git fetch origin
+                  git checkout beta
+                  git merge main
+                  git push origin beta
