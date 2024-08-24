@@ -1,3 +1,11 @@
+## [1.1.0-beta.3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2024-08-24)
+
+
+### Bug Fixes
+
+* give post-release merge responsibility to a dedicated workflow ([8e33893](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/8e33893d7ff58a4cee85a7a067c01a3ea1769660))
+* use auth mechanism compatible with pushes ([86929de](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/86929debbb692ba6c8af5bcaf03a58d9590c7678))
+
 ## [1.1.0-beta.2](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2024-08-24)
 
 
