@@ -1,3 +1,10 @@
+## [1.1.0-beta.2](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2024-08-24)
+
+
+### Bug Fixes
+
+* give semantic release the post-release task of merging main into beta ([df3e2e3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/df3e2e313a24f8fadd9ca394e59082513f687c24))
+
 ## [1.1.0-beta.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.2...v1.1.0-beta.1) (2024-08-24)
 
 
