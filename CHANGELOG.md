@@ -1,3 +1,10 @@
+## [1.1.0-beta.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.2...v1.1.0-beta.1) (2024-08-24)
+
+
+### Features
+
+* drop upper node engine limit ([da0e104](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/da0e1041f84f6993182f9ac97c0f89c342012241))
+
 ## [1.0.2](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.1...v1.0.2) (2023-11-29)
 
 ## [1.0.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.0...v1.0.1) (2023-11-09)

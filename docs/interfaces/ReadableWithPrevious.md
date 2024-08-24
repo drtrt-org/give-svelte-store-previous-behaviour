@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/ReadableWithPrevious.ts:11](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/e3a2cec/src/ReadableWithPrevious.ts#L11)
+[src/ReadableWithPrevious.ts:11](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/1120a5f/src/ReadableWithPrevious.ts#L11)
 
 ___
 
@@ -61,4 +61,4 @@ Readable.subscribe
 
 #### Defined in
 
-[src/ReadableWithPrevious.ts:6](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/e3a2cec/src/ReadableWithPrevious.ts#L6)
+[src/ReadableWithPrevious.ts:6](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/1120a5f/src/ReadableWithPrevious.ts#L6)
