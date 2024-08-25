@@ -1,10 +1,13 @@
+name: Post-release
+
 on:
     release:
         types: [created]
 
 jobs:
-    sync-beta-to-main:
+    merge-main-to-beta:
         runs-on: ubuntu-latest
+        if: ${{ !contains(github.event.release.name, 'beta') }}
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
@@ -22,5 +25,5 @@ jobs:
               run: |
                   git fetch origin
                   git checkout beta
-                  git merge main
+                  git merge origin/main
                   git push origin beta

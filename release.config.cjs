@@ -23,7 +23,6 @@ module.exports = {
             "@semantic-release/exec",
             {
                 prepareCmd: "typedoc --out docs",
-                successCmd: "git checkout beta && git merge main && git push origin beta",
             },
         ],
         "@semantic-release/npm",
