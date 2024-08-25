@@ -1,3 +1,12 @@
+## [1.1.1-beta.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.0...v1.1.1-beta.1) (2024-08-25)
+
+
+### Bug Fixes
+
+* ensure post-release workflow only runs with a non-beta release ([c183ea1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/c183ea14abb1aec6eeb0a62abffe0efaebbcbcf3))
+* merge main from origin directly to local beta branch ([b2be98b](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/b2be98bbbc8ef382d490502061836ca842404c45))
+* remove bogus success command ([1900435](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/1900435db5dfa3737bd226a4d62c53bb9789d1b5))
+
 ## [1.1.0](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.2...v1.1.0) (2024-08-25)
 
 
