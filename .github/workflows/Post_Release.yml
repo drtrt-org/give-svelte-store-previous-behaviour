@@ -1,0 +1,26 @@
+on:
+    release:
+        types: [created]
+
+jobs:
+    sync-beta-to-main:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Configure git user
+              run: |
+                  git config user.name 'GitHub Actions Bot'
+                  git config user.email '<>'
+
+            - name: Merge main into beta
+              env:
+                  GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB }}
+              run: |
+                  git fetch origin
+                  git checkout beta
+                  git merge main
+                  git push origin beta
