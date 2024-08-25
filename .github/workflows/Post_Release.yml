@@ -1,9 +1,11 @@
+name: Post-release
+
 on:
     release:
         types: [created]
 
 jobs:
-    sync-main-to-beta:
+    merge-main-to-beta:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
