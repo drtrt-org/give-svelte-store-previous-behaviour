@@ -1,3 +1,17 @@
+## [1.1.0](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.0.2...v1.1.0) (2024-08-25)
+
+
+### Features
+
+* drop upper node engine limit ([da0e104](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/da0e1041f84f6993182f9ac97c0f89c342012241))
+
+
+### Bug Fixes
+
+* give post-release merge responsibility to a dedicated workflow ([8e33893](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/8e33893d7ff58a4cee85a7a067c01a3ea1769660))
+* give semantic release the post-release task of merging main into beta ([df3e2e3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/df3e2e313a24f8fadd9ca394e59082513f687c24))
+* use auth mechanism compatible with pushes ([86929de](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/86929debbb692ba6c8af5bcaf03a58d9590c7678))
+
 ## [1.1.0-beta.3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2024-08-24)
 
 
