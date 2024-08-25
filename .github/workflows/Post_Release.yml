@@ -3,7 +3,7 @@ on:
         types: [created]
 
 jobs:
-    sync-beta-to-main:
+    sync-main-to-beta:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
@@ -22,5 +22,5 @@ jobs:
               run: |
                   git fetch origin
                   git checkout beta
-                  git merge main
+                  git merge origin/main
                   git push origin beta
