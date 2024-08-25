@@ -7,6 +7,7 @@ on:
 jobs:
     merge-main-to-beta:
         runs-on: ubuntu-latest
+        if: ${{ !contains(github.event.release.name, 'beta') }}
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
