@@ -1,3 +1,9 @@
+## [1.2.0-beta.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.1...v1.2.0-beta.1) (2024-08-26)
+
+### Features
+
+* update all dependencies to latest major version ([d3cd6e4](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/commit/d3cd6e497378dbbef382b93e251e6ae325959181))
+
 ## [1.1.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.0...v1.1.1) (2024-08-25)
 
 

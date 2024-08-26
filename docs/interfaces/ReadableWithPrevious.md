@@ -1,64 +1,61 @@
+[**@drtrt/give-svelte-store-previous-behaviour**](../README.md) • **Docs**
+
+***
+
 [@drtrt/give-svelte-store-previous-behaviour](../README.md) / ReadableWithPrevious
 
 # Interface: ReadableWithPrevious\<T\>
 
-## Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-## Hierarchy
+## Extends
 
 - `Readable`\<`T`\>
 
-  ↳ **`ReadableWithPrevious`**
+## Extended by
 
-  ↳↳ [`WritableWithPrevious`](WritableWithPrevious.md)
+- [`WritableWithPrevious`](WritableWithPrevious.md)
 
-## Table of contents
+## Type Parameters
 
-### Properties
-
-- [previousValueStore](ReadableWithPrevious.md#previousvaluestore)
-- [subscribe](ReadableWithPrevious.md#subscribe)
+• **T**
 
 ## Properties
 
 ### previousValueStore
 
-• **previousValueStore**: `Readable`\<`undefined` \| `T`\>
+> **previousValueStore**: `Readable`\<`undefined` \| `T`\>
 
 #### Defined in
 
-[src/ReadableWithPrevious.ts:11](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/9a03dcb/src/ReadableWithPrevious.ts#L11)
+[src/ReadableWithPrevious.ts:11](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/ce8fffa2f41148829af1b11f1805e1bfeae3ded0/src/ReadableWithPrevious.ts#L11)
 
-___
+***
 
-### subscribe
+### subscribe()
 
-• **subscribe**: (`this`: `void`, `run`: [`SubscriberWithPrevious`](../README.md#subscriberwithprevious)\<`T`\>, `invalidate?`: `Invalidator`\<`T`\>) => `Unsubscriber`
+> **subscribe**: (`this`, `run`, `invalidate`?) => `Unsubscriber`
 
-#### Type declaration
+Subscribe on value changes.
 
-▸ (`this`, `run`, `invalidate?`): `Unsubscriber`
+#### Parameters
 
-##### Parameters
+• **this**: `void`
 
-| Name | Type |
-| :------ | :------ |
-| `this` | `void` |
-| `run` | [`SubscriberWithPrevious`](../README.md#subscriberwithprevious)\<`T`\> |
-| `invalidate?` | `Invalidator`\<`T`\> |
+• **run**: [`SubscriberWithPrevious`](../type-aliases/SubscriberWithPrevious.md)\<`T`\>
 
-##### Returns
+subscription callback
+
+• **invalidate?**: `Invalidator`\<`T`\>
+
+cleanup callback
+
+#### Returns
 
 `Unsubscriber`
 
 #### Overrides
 
-Readable.subscribe
+`Readable.subscribe`
 
 #### Defined in
 
-[src/ReadableWithPrevious.ts:6](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/9a03dcb/src/ReadableWithPrevious.ts#L6)
+[src/ReadableWithPrevious.ts:6](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/ce8fffa2f41148829af1b11f1805e1bfeae3ded0/src/ReadableWithPrevious.ts#L6)
