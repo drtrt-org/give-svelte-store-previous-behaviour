@@ -1,6 +1,4 @@
-// eslint-disable-next-line import/no-duplicates
 import type * as svelteStore from "svelte/store";
-// eslint-disable-next-line import/no-duplicates
 import { get, type Readable, writable, derived } from "svelte/store";
 import { expect, describe, it, beforeEach, vi, type Mock } from "vitest";
 
@@ -11,8 +9,7 @@ vi.mock("svelte/store", async () => {
     const actual: typeof svelteStore = await vi.importActual("svelte/store");
     return {
         ...actual,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        derived: vi.fn((...args) => (actual.derived as any)(...args)),
+        derived: vi.fn((...args: Parameters<typeof actual.derived>) => actual.derived(...args)),
     };
 });
 
