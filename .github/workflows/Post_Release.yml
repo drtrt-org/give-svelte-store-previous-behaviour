@@ -21,7 +21,7 @@ jobs:
 
             - name: Merge main into beta
               env:
-                  GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB }}
+                  GITHUB_TOKEN: ${{ secrets.DRTRT_ADMIN_BOT }}
               run: |
                   git fetch origin
                   git checkout beta
