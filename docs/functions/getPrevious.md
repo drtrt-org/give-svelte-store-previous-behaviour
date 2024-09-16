@@ -22,4 +22,4 @@
 
 ## Defined in
 
-[src/getPrevious.ts:3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/15c2ddf2e74534eda288ee82cbb0fc410fc6dba5/src/getPrevious.ts#L3)
+[src/getPrevious.ts:3](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/ba934e342f7ffcd038fc087ff66024dd780ae430/src/getPrevious.ts#L3)

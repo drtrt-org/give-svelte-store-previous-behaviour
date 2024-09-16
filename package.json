@@ -1,6 +1,6 @@
 {
     "name": "@drtrt/give-svelte-store-previous-behaviour",
-    "version": "1.2.1-beta.1",
+    "version": "1.2.1",
     "description": "A wrapper for any Svelte Store instance, giving access to the previously set value in a style that follows existing Svelte Store semantics.",
     "keywords": [
         "svelte",

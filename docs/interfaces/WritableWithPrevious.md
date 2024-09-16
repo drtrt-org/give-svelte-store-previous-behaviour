@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[src/WritableWithPrevious.ts:12](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/15c2ddf2e74534eda288ee82cbb0fc410fc6dba5/src/WritableWithPrevious.ts#L12)
+[src/WritableWithPrevious.ts:12](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/ba934e342f7ffcd038fc087ff66024dd780ae430/src/WritableWithPrevious.ts#L12)
 
 ***
 
@@ -58,7 +58,7 @@ cleanup callback
 
 #### Defined in
 
-[src/WritableWithPrevious.ts:7](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/15c2ddf2e74534eda288ee82cbb0fc410fc6dba5/src/WritableWithPrevious.ts#L7)
+[src/WritableWithPrevious.ts:7](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/blob/ba934e342f7ffcd038fc087ff66024dd780ae430/src/WritableWithPrevious.ts#L7)
 
 ## Methods
 

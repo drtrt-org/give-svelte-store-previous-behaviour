@@ -1,3 +1,5 @@
+## [1.2.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.2.0...v1.2.1) (2024-09-16)
+
 ## [1.2.1-beta.1](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.2.0...v1.2.1-beta.1) (2024-09-16)
 
 ## [1.2.0](https://github.com/drtrt-org/give-svelte-store-previous-behaviour/compare/v1.1.1...v1.2.0) (2024-08-26)
