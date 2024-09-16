@@ -7,8 +7,8 @@
 
 A wrapper for any Svelte Store instance that gives access to the previously set value, using a style that follows familiar Svelte Store semantics.
 
-| _`@drtrt/give-svelte-store-previous-behaviour` is used to log state changes in [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _`@drtrt/give-svelte-store-previous-behaviour` is used to log state changes in [Fluent API Generator](https://www.fluentapigen.com)_ |
+| :----------------------------------------------------------------------------------------------------------------------------------- |
 
 <br/>
 
